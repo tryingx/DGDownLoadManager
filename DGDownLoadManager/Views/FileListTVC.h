@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface FileListTVC : UITableViewCell
+@property (strong, nonatomic) IBOutlet UIButton *fileImageBtn;
+@property (strong, nonatomic) IBOutlet UILabel *fileNameLab;
+@property (strong, nonatomic) IBOutlet UILabel *fileBrifLab;
 
 @end
