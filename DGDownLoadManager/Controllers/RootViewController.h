@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RootViewController.h
 //  DGDownLoadManager
 //
 //  Created by Gavin on 15/3/8.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RootViewController : UITabBarController
 
 @end
-
