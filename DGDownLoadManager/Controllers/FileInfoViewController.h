@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FileInfoViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UINavigationItem *navigationItem;
-
+@property (strong, nonatomic) IBOutlet UINavigationItem *navItem;
+@property (strong, nonatomic) IBOutlet UIButton *backBtn;
+- (IBAction)didClickBack:(UIButton *)sender;
 @end

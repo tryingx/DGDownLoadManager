@@ -4,11 +4,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--DGDownLoadManager-->
+        <!--文件列表-->
         <scene sceneID="YXX-Sb-zmM">
             <objects>
                 <tabBarController id="ZXi-Ei-ZxJ" customClass="RootViewController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="DGDownLoadManager" id="oUn-7g-lSf"/>
+                    <navigationItem key="navigationItem" title="文件列表" id="oUn-7g-lSf"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="cwy-e9-qy9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -16,6 +16,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <outlet property="delegate" destination="oUn-7g-lSf" id="lBy-Z9-uFl"/>
+                        <outlet property="rootVCNavItem" destination="oUn-7g-lSf" id="ltY-yg-eE0"/>
                         <segue destination="BZn-y3-Pcn" kind="relationship" relationship="viewControllers" id="e65-zA-xlH"/>
                         <segue destination="JfM-CO-jKT" kind="relationship" relationship="viewControllers" id="AYU-6z-E9N"/>
                         <segue destination="3FG-4P-IsW" kind="relationship" relationship="viewControllers" id="aCC-mM-jSy"/>
@@ -23,7 +25,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDE-4c-cXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="354" y="352"/>
+            <point key="canvasLocation" x="358" y="352"/>
         </scene>
         <!--FileList-->
         <scene sceneID="8C4-wl-LN6">
@@ -104,9 +106,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.33231803589999998" green="0.74642913509999997" blue="0.18038579599999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="文件详情" id="XgO-FM-acD"/>
+                    <navigationItem key="navigationItem" title="文件详情" id="XgO-FM-acD">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="ixk-mY-Osm">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j8S-jN-wrc">
+                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="返回">
+                                    <color key="titleColor" red="0.33231803589999998" green="0.74642913509999997" blue="0.18038579599999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickBack:" destination="8vL-wk-r76" eventType="touchUpInside" id="VWr-mc-vkO"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="didClickToBack:" destination="8vL-wk-r76" id="LKr-aG-8xk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="navigationItem" destination="XgO-FM-acD" id="mfS-MR-bub"/>
+                        <outlet property="backBtn" destination="j8S-jN-wrc" id="ukP-iE-We9"/>
+                        <outlet property="navItem" destination="XgO-FM-acD" id="50N-kS-PSI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THO-Wp-hSQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -198,20 +219,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uE-s1-D1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-29" y="352"/>
-        </scene>
-        <!--Item 2-->
-        <scene sceneID="f8E-Fk-I8U">
-            <objects>
-                <viewController id="xdA-3r-ycg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LvA-uZ-xDJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="kOf-OT-iBs"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f5h-mb-IUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

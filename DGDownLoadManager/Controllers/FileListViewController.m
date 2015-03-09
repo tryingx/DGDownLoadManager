@@ -9,16 +9,18 @@
 #import "FileListViewController.h"
 #import "FileListTVC.h"
 
+#import "RootViewController.h"
+
 @interface FileListViewController ()
 
 @end
 
 @implementation FileListViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    RootViewController *rootVC = [[RootViewController alloc] init];
+    rootVC.navigationItem.title = @"SSSSS";
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;

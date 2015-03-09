@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UITabBarController
+@interface RootViewController : UITabBarController<UITabBarControllerDelegate>
+@property (strong, nonatomic) IBOutlet UINavigationItem *rootVCNavItem;
 
 @end
