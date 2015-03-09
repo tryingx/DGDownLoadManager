@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="358" y="352"/>
         </scene>
-        <!--FileList-->
+        <!--文件列表-->
         <scene sceneID="8C4-wl-LN6">
             <objects>
                 <viewController id="BZn-y3-Pcn" customClass="FileListViewController" sceneMemberID="viewController">
@@ -88,7 +88,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="FileList" id="QhF-04-OUx"/>
+                    <tabBarItem key="tabBarItem" title="文件列表" id="QhF-04-OUx"/>
                     <connections>
                         <outlet property="fileListTableView" destination="5Xe-az-TJZ" id="eCk-IK-dt2"/>
                     </connections>
@@ -134,7 +134,7 @@
             </objects>
             <point key="canvasLocation" x="1172" y="-333"/>
         </scene>
-        <!--DownLoading-->
+        <!--正在下载-->
         <scene sceneID="tYk-vP-mZa">
             <objects>
                 <viewController id="JfM-CO-jKT" customClass="DownLoadingViewController" sceneMemberID="viewController">
@@ -142,7 +142,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="VqV-lE-lab">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="40" sectionFooterHeight="22" id="VqV-lE-lab">
                                 <rect key="frame" x="0.0" y="64" width="320" height="453"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -163,13 +163,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="DownLoading" id="BZr-Pp-dGt"/>
+                    <tabBarItem key="tabBarItem" title="正在下载" id="BZr-Pp-dGt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RmX-Bo-eIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="777" y="352"/>
         </scene>
-        <!--Finished-->
+        <!--已下载-->
         <scene sceneID="LyB-Vc-n5a">
             <objects>
                 <viewController id="3FG-4P-IsW" customClass="FinishedViewController" sceneMemberID="viewController">
@@ -198,7 +198,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Finished" id="VLc-ek-IQz"/>
+                    <tabBarItem key="tabBarItem" title="已下载" id="VLc-ek-IQz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="60R-el-aIE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
