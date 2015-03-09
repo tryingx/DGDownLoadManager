@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FinishedViewController : UIViewController
+@interface FinishedViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

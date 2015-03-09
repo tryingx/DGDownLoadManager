@@ -29,6 +29,9 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"FileListTVC";
     FileListTVC *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    [cell.fileImageBtn setBackgroundImage:[UIImage imageNamed:@"DGFile_Logo"] forState:UIControlStateNormal];
+    cell.fileNameLab.text = [NSString stringWithFormat:@"这是第%ld个文件",indexPath.row + 1];
+    cell.fileBrifLab.text = [NSString stringWithFormat:@"这是DGDownLoadManager的一个文件的简介，这个文件可以在详情页面进行对本文件的下载以及查看文件的信息详情。"];
     return cell;
 }
 - (void)didReceiveMemoryWarning {

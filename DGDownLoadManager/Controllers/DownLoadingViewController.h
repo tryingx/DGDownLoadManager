@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DownLoadingViewController : UIViewController
+@interface DownLoadingViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
