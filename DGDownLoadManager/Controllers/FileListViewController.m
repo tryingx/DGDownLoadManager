@@ -9,9 +9,9 @@
 #import "FileListViewController.h"
 #import "FileListTVC.h"
 
-#import "RootViewController.h"
-
-@interface FileListViewController ()
+@interface FileListViewController (){
+    NSMutableArray *fileUrlArray;
+}
 
 @end
 
@@ -19,8 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    RootViewController *rootVC = [[RootViewController alloc] init];
-    rootVC.navigationItem.title = @"SSSSS";
+}
+#pragma mark 对象实例化方法
+-(void)initObjectOfMethod{
+    
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -28,12 +30,16 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;
 }
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 87;
+}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"FileListTVC";
     FileListTVC *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     [cell.fileImageBtn setBackgroundImage:[UIImage imageNamed:@"DGFile_Logo"] forState:UIControlStateNormal];
     cell.fileNameLab.text = [NSString stringWithFormat:@"这是第%ld个文件",indexPath.row + 1];
     cell.fileBrifLab.text = [NSString stringWithFormat:@"这是DGDownLoadManager的一个文件的简介，这个文件可以在详情页面进行对本文件的下载以及查看文件的信息详情。"];
+    cell.accessoryType = UITableViewCellAccessoryNone;
     return cell;
 }
 - (void)didReceiveMemoryWarning {

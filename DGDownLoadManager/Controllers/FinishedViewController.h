@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FinishedViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *finishedTableView;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "FinishedViewController.h"
+#import "FileListTVC.h"
 
 #define VIEW_Width self.view.bounds.size.width
 #define VIEW_Height self.view.bounds.size.height
@@ -21,11 +22,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+#pragma mark 全部删除按钮执行方法
+-(void)didClickToDelegate:(UIButton *)sender{
+    NSLog(@"ssssssssssss");
+}
+#pragma mark UITableViewDelegate&UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;
 }
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 40;
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 87;
 }
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *allOptionView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, VIEW_Width, 40)];
@@ -42,18 +48,12 @@
     [allOptionView addSubview:allOptionBtn];
     return allOptionView;
 }
-#pragma mark 全部删除按钮执行方法
--(void)didClickToDelegate:(UIButton *)sender{
-    NSLog(@"ssssssssssss");
-}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"";
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    }
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"这是第%ld个Cell",indexPath.row + 1];
+    static NSString *CellIdentifier = @"FileListTVC";
+    FileListTVC *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    [cell.fileImageBtn setBackgroundImage:[UIImage imageNamed:@"DGFile_Logo"] forState:UIControlStateNormal];
+    cell.fileNameLab.text = [NSString stringWithFormat:@"这是第%ld个文件",indexPath.row + 1];
+    cell.fileBrifLab.text = [NSString stringWithFormat:@"这是DGDownLoadManager的一个文件的简介，这个文件可以在详情页面进行对本文件的下载以及查看文件的信息详情。"];
     return cell;
 }
 - (void)didReceiveMemoryWarning {

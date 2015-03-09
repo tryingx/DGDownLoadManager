@@ -1,8 +1,8 @@
 //
 //  GFIleDownLoadManager.m
 //
-//  Created by Bruce Xu on 14-5-12.
-//  Copyright (c) 2014年 Pansoft. All rights reserved.
+//  Created by Gavin on 15-3-8.
+//  Copyright (c) 2014年 TryingX. All rights reserved.
 //
 
 #import "GFIleDownLoadManager.h"

@@ -25,7 +25,6 @@
 		8669964E1AAC29A400A61983 /* ASIShareRequestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 866996381AAC29A400A61983 /* ASIShareRequestQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8669964F1AAC29A400A61983 /* GCommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8669963B1AAC29A400A61983 /* GCommonHelper.m */; };
 		866996501AAC29A400A61983 /* GFIleDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8669963D1AAC29A400A61983 /* GFIleDownLoadManager.m */; };
-		866996511AAC29A400A61983 /* GFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8669963F1AAC29A400A61983 /* GFileModel.m */; };
 		866996521AAC29A400A61983 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 866996421AAC29A400A61983 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		866996551AAC2A3400A61983 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 866996531AAC2A2400A61983 /* libz.1.2.5.dylib */; };
 		8669965D1AAC2C6300A61983 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8669965C1AAC2C6300A61983 /* RootViewController.m */; };
@@ -35,6 +34,7 @@
 		8669966D1AAC3CD900A61983 /* FileListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8669966C1AAC3CD900A61983 /* FileListTVC.m */; };
 		866996771AAC810800A61983 /* DGFile_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 866996761AAC810800A61983 /* DGFile_Logo.png */; };
 		8669967A1AAD377F00A61983 /* FileInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866996791AAD377F00A61983 /* FileInfoViewController.m */; };
+		86FCC4F61AAD95BF00B1D3E7 /* GFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FCC4F51AAD95BF00B1D3E7 /* GFileModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,8 +87,6 @@
 		8669963B1AAC29A400A61983 /* GCommonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCommonHelper.m; sourceTree = "<group>"; };
 		8669963C1AAC29A400A61983 /* GFIleDownLoadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFIleDownLoadManager.h; sourceTree = "<group>"; };
 		8669963D1AAC29A400A61983 /* GFIleDownLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFIleDownLoadManager.m; sourceTree = "<group>"; };
-		8669963E1AAC29A400A61983 /* GFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFileModel.h; sourceTree = "<group>"; };
-		8669963F1AAC29A400A61983 /* GFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFileModel.m; sourceTree = "<group>"; };
 		866996411AAC29A400A61983 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		866996421AAC29A400A61983 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		866996531AAC2A2400A61983 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
@@ -105,6 +103,8 @@
 		866996761AAC810800A61983 /* DGFile_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DGFile_Logo.png; sourceTree = "<group>"; };
 		866996781AAD377F00A61983 /* FileInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInfoViewController.h; sourceTree = "<group>"; };
 		866996791AAD377F00A61983 /* FileInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInfoViewController.m; sourceTree = "<group>"; };
+		86FCC4F41AAD95BF00B1D3E7 /* GFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFileModel.h; sourceTree = "<group>"; };
+		86FCC4F51AAD95BF00B1D3E7 /* GFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFileModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +192,8 @@
 		8669961E1AAC29A400A61983 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				86FCC4F41AAD95BF00B1D3E7 /* GFileModel.h */,
+				86FCC4F51AAD95BF00B1D3E7 /* GFileModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,8 +246,6 @@
 				8669963B1AAC29A400A61983 /* GCommonHelper.m */,
 				8669963C1AAC29A400A61983 /* GFIleDownLoadManager.h */,
 				8669963D1AAC29A400A61983 /* GFIleDownLoadManager.m */,
-				8669963E1AAC29A400A61983 /* GFileModel.h */,
-				8669963F1AAC29A400A61983 /* GFileModel.m */,
 			);
 			path = GDownloadManage;
 			sourceTree = "<group>";
@@ -401,6 +401,7 @@
 				866996451AAC29A400A61983 /* ASIAuthenticationDialog.m in Sources */,
 				8669964A1AAC29A400A61983 /* ASIFormDataRequest.m in Sources */,
 				866996501AAC29A400A61983 /* GFIleDownLoadManager.m in Sources */,
+				86FCC4F61AAD95BF00B1D3E7 /* GFileModel.m in Sources */,
 				8669964E1AAC29A400A61983 /* ASIShareRequestQueue.m in Sources */,
 				866996661AAC33AD00A61983 /* FinishedViewController.m in Sources */,
 				866995FB1AAC296100A61983 /* AppDelegate.m in Sources */,
@@ -414,7 +415,6 @@
 				866996491AAC29A400A61983 /* ASIDownloadCache.m in Sources */,
 				866996471AAC29A400A61983 /* ASIDataDecompressor.m in Sources */,
 				8669966D1AAC3CD900A61983 /* FileListTVC.m in Sources */,
-				866996511AAC29A400A61983 /* GFileModel.m in Sources */,
 				866996521AAC29A400A61983 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

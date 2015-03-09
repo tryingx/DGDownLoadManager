@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DownLoadingViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *downloadingTableView;
 
 @end
