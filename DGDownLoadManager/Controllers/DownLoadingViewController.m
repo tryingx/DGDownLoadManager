@@ -19,10 +19,11 @@
 @end
 
 @implementation DownLoadingViewController
-
+-(void)viewWillAppear:(BOOL)animated{
+    NSLog(@"++++++++%f",self.downloadingTableView.frame.origin.y);
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 #pragma mark 全部删除按钮执行方法
 -(void)didClickToDelegateAllFile:(UIButton *)sender{
@@ -37,7 +38,10 @@
     return 10;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 87;
+    return 87.0f;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 40.0f;
 }
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *allOptionView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 40)];

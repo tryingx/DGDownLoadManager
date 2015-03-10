@@ -35,6 +35,7 @@
 		866996771AAC810800A61983 /* DGFile_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 866996761AAC810800A61983 /* DGFile_Logo.png */; };
 		8669967A1AAD377F00A61983 /* FileInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866996791AAD377F00A61983 /* FileInfoViewController.m */; };
 		86FCC4F61AAD95BF00B1D3E7 /* GFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FCC4F51AAD95BF00B1D3E7 /* GFileModel.m */; };
+		86FCC4F81AAD9ABD00B1D3E7 /* small_apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86FCC4F71AAD9ABD00B1D3E7 /* small_apple.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		866996791AAD377F00A61983 /* FileInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInfoViewController.m; sourceTree = "<group>"; };
 		86FCC4F41AAD95BF00B1D3E7 /* GFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFileModel.h; sourceTree = "<group>"; };
 		86FCC4F51AAD95BF00B1D3E7 /* GFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFileModel.m; sourceTree = "<group>"; };
+		86FCC4F71AAD9ABD00B1D3E7 /* small_apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = small_apple.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +290,7 @@
 		866996751AAC810800A61983 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				86FCC4F71AAD9ABD00B1D3E7 /* small_apple.jpg */,
 				866996761AAC810800A61983 /* DGFile_Logo.png */,
 			);
 			path = Images;
@@ -373,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86FCC4F81AAD9ABD00B1D3E7 /* small_apple.jpg in Resources */,
 				866996011AAC296100A61983 /* Main.storyboard in Resources */,
 				866996771AAC810800A61983 /* DGFile_Logo.png in Resources */,
 				866996061AAC296100A61983 /* LaunchScreen.xib in Resources */,

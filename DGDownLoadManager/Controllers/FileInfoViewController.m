@@ -13,10 +13,8 @@
 @end
 
 @implementation FileInfoViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 - (IBAction)didClickBack:(UIButton *)sender {
     [self.navigationController popViewControllerAnimated:YES];

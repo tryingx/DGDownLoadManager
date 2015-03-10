@@ -17,10 +17,8 @@
 @end
 
 @implementation FinishedViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 #pragma mark 全部删除按钮执行方法
 -(void)didClickToDelegate:(UIButton *)sender{
@@ -32,6 +30,9 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 87;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 40;
 }
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *allOptionView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, VIEW_Width, 40)];
